@@ -8,8 +8,8 @@ export default function todo_items({todo,onDelete}) {
             Todo Due Date: {todo.date}<br/> 
              Todo Due Time: {todo.time}</p>
         <button type="button" class="btn btn-danger btn-sm mx-1" style={{width:"90px"}} onClick={()=>onDelete(todo)}>Delete</button>
-        <button type="button" class="btn btn-warning btn-sm mx-1" style={{width:"90px"}} onClick={()=>onDelete(todo)}>Details</button>
-        <button type="button" class="btn btn-success btn-sm mx-1" style={{width:"90px"}} onClick={()=>onDelete(todo)}>Completed</button>
+        <button type="button" class="btn btn-warning btn-sm mx-1" style={{width:"90px"}} /*onClick={()=>onDelete(todo)}*/>Details</button>
+        <button type="button" class="btn btn-success btn-sm mx-1" style={{width:"90px"}} /*onClick={()=>onDelete(todo)}*/>Completed</button>
         </div>
     )
 }
