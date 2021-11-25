@@ -12,7 +12,7 @@ export default function Addtodo({ addTodo }) {
     if (!title) {
       alert("Title cannot be blank");
     }
-    else if (!desc) {
+    /*else if (!desc) {
         alert("Description cannot be blank");
     }
     else if (!date) {
@@ -20,7 +20,7 @@ export default function Addtodo({ addTodo }) {
       }
     else if (!time) {
         alert("Due Time cannot be blank");
-      } 
+      }*/ 
     else {
       addTodo(title, desc , date, time);
     }
