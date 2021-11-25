@@ -80,12 +80,12 @@ useEffect(() => {
       <Router>
       <Header/>
       <Routes>
-        <Route path="/todo-list" element={<>
+        <Route exact path="/" element={<>
            <AddTodo addTodo={addTodo}/>
            <Todo_list todos={todos} onDelete={onDelete}/>
            </>}>
         </Route>
-        <Route path="/todo-list/about" element={
+        <Route exact path="/about" element={
             <About />
           }>
         </Route>
