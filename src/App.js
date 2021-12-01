@@ -15,10 +15,8 @@ function App() {
       <Router>
       <Header/>
       <Routes>
-        <Route path="/" element={<Home/>}>
-        </Route>
-        <Route path='/about' element={<About/>}>
-        </Route>
+        <Route path="/todo-list" element={<Home/>}/>
+        <Route path='/about' element={<About/>}/>
       </Routes>
       <Footer/>
       </Router>

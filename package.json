@@ -1,4 +1,5 @@
-{ "homepage": "http://SaurabhTiwari4093.github.io/todo-list",
+{
+  "homepage": "http://SaurabhTiwari4093.github.io/todo-list",
   "name": "todo-list",
   "version": "0.1.0",
   "private": true,
@@ -39,6 +40,7 @@
     ]
   },
   "devDependencies": {
+    "@types/react": "^17.0.37",
     "gh-pages": "^3.2.3"
   }
 }

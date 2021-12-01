@@ -1,6 +1,6 @@
 import Todo_list from "../todo-list/component";
 import AddTodo from '../addtodo/component';
-import React, { useState,useEffect } from 'react';
+import React, { useState,useEffect } from "react";
 
 export default function Home() {
   let initTodo
@@ -17,7 +17,7 @@ export default function Home() {
     }));
     localStorage.setItem("todos",JSON.stringify(todos));
   }
-  
+
   const addTodo =(title,desc,date,time)=>{
     let sno;
     if(todos.length==0){
@@ -36,7 +36,7 @@ export default function Home() {
     settodos([...todos,mytodo]);
   }
 
-  const [todos, settodos] = useState(initTodo);
+const [todos, settodos] = useState(initTodo);
 
 useEffect(() => {
   localStorage.setItem("todos",JSON.stringify(todos));
