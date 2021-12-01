@@ -5,6 +5,7 @@ export default function Addtodo({ addTodo }) {
   const [desc, setDesc] = useState("");
   const [date, setDate] = useState("");
   const [time, setTime] = useState("");
+  const [sno,setSno]=useState("");
   
 
   const submit = (e) => {
@@ -12,22 +13,14 @@ export default function Addtodo({ addTodo }) {
     if (!title) {
       alert("Title cannot be blank");
     }
-    /*else if (!desc) {
-        alert("Description cannot be blank");
-    }
-    else if (!date) {
-        alert("Due Date cannot be blank");
-      }
-    else if (!time) {
-        alert("Due Time cannot be blank");
-      }*/ 
     else {
-      addTodo(title, desc , date, time);
+      addTodo(sno,title, desc , date, time,);
     }
     setTitle("");
     setDesc("");
     setDate("");
     setTime("");
+    setSno("");
   };
 
   return (
@@ -62,8 +55,8 @@ export default function Addtodo({ addTodo }) {
             }}
           />
         </div>
-        <div class="row">
-          <div class="col-sm"><div className="mb-3">
+        <div className="row">
+          <div className="col-sm"><div className="mb-3">
           <label htmlFor="date" className="form-label">
             Todo Due Date
           </label>

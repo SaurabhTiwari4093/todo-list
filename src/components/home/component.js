@@ -18,9 +18,8 @@ export default function Home() {
     localStorage.setItem("todos",JSON.stringify(todos));
   }
 
-  const addTodo =(title,desc,date,time)=>{
-    let sno;
-    if(todos.length==0){
+  const addTodo =(sno,title,desc,date,time)=>{
+    if(todos.length===0){
       sno=0;
     }
     else{
