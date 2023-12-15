@@ -15,7 +15,7 @@ function App() {
       <Router>
       <Header/>
       <Routes>
-        <Route path="/todo-list" element={<Home/>}/>
+        <Route path="/" element={<Home/>}/>
         <Route path='/about' element={<About/>}/>
       </Routes>
       <Footer/>
